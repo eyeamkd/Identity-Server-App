@@ -138,3 +138,4 @@ C:\Users\kunal.d\source\repos\IdentityServer\IdentityServer\obj\Debug\netcoreapp
 C:\Users\kunal.d\source\repos\IdentityServer\IdentityServer\bin\Debug\netcoreapp3.1\IdentityServer4.AspNetIdentity.dll
 C:\Users\kunal.d\source\repos\IdentityServer\IdentityServer\obj\Debug\netcoreapp3.1\IdentityServer.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kunal.d\source\repos\IdentityServer\IdentityServer\obj\Debug\netcoreapp3.1\Razor\Views\Consent\Index.cshtml.g.cs
+C:\Users\kunal.d\source\repos\IdentityServer\IdentityServer\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Register.cshtml.g.cs

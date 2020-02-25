@@ -30,7 +30,8 @@ namespace IdentityServer
                 ClientSecrets = {new Secret("client_secret_mvc".ToSha256())},
                 AllowedGrantTypes = {GrantType.ClientCredentials, GrantType.AuthorizationCode },
                 RedirectUris = { "https://localhost:44337/signin-oidc" },
-                AllowedScopes = {"ApiOne", "ApiTwo", IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile}
+                AllowedScopes = {"ApiOne", "ApiTwo", IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile}, 
+                RequireConsent = false
             }
             };
     }

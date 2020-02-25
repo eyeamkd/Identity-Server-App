@@ -12,5 +12,11 @@ namespace IdentityServer.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Index(string returnUrl)
+        {
+            return View(new LoginViewModel { ReturnUrl = returnUrl });
+        }
     }
 }

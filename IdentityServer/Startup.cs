@@ -35,7 +35,7 @@ namespace IdentityServer
             services.ConfigureApplicationCookie(config =>
             {
                 config.Cookie.Name = "IdentityServer.Cookie";
-                config.LoginPath = "/Auth/Login";
+                config.LoginPath = "/Auth/Register";
             });
            
             
@@ -45,6 +45,7 @@ namespace IdentityServer
                     .AddInMemoryIdentityResources(Configuration.GetIdentityResources())
                     .AddInMemoryClients(Configuration.GetClients())
                     .AddDeveloperSigningCredential();
+            services.AddAuthorization();
             services.AddControllersWithViews();
         } 
 
@@ -55,9 +56,10 @@ namespace IdentityServer
             {
                 app.UseDeveloperExceptionPage();
             }
-           
-            app.UseRouting();
             app.UseAuthentication();
+            app.UseStaticFiles();
+            app.UseRouting();
+           
             app.UseAuthorization();
             app.UseIdentityServer();
             app.UseEndpoints(endpoints =>

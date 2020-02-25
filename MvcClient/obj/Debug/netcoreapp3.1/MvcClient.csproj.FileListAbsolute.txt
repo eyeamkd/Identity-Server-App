@@ -102,9 +102,10 @@ C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\bin\Debug\netcoreapp3.1\r
 C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\obj\Debug\netcoreapp3.1\MvcClient.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\obj\Debug\netcoreapp3.1\MvcClient.Views.pdb
 C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\obj\Debug\netcoreapp3.1\MvcClient.dll
 C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\obj\Debug\netcoreapp3.1\MvcClient.pdb
 C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\obj\Debug\netcoreapp3.1\Razor\Views\Home\Secret.cshtml.g.cs
 C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\bin\Debug\netcoreapp3.1\IdentityModel.dll
+C:\Users\kunal.d\source\repos\IdentityServer\MvcClient\obj\Debug\netcoreapp3.1\MvcClient.MvcApplicationPartsAssemblyInfo.cache

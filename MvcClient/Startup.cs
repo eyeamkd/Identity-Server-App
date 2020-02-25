@@ -33,6 +33,7 @@ namespace MvcClient
                         config.ResponseType = "code"; 
 
                     });
+            services.AddAuthorization();
             services.AddControllersWithViews(); 
 
         }
@@ -44,9 +45,10 @@ namespace MvcClient
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseRouting();
             app.UseAuthentication();
+            app.UseStaticFiles();
+            app.UseRouting();
+            
             app.UseAuthorization(); 
 
 
