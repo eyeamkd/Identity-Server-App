@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -12,13 +13,16 @@ namespace IdentityServer.Controllers
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IHttpClientFactory _httpClientFactory;
 
         public AuthController( 
-            SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
-           
+            SignInManager<IdentityUser> signInManager, 
+            UserManager<IdentityUser> userManager, 
+            IHttpClientFactory httpClientFactory )
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _httpClientFactory = httpClientFactory;
         } 
 
 

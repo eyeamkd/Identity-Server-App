@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Security.Claims;
 
 namespace IdentityServer
 {
@@ -15,7 +16,8 @@ namespace IdentityServer
                     var userManager = scope.ServiceProvider
                                         .GetRequiredService<UserManager<IdentityUser>>();
                 var user = new IdentityUser("kunal");
-                var result = userManager.CreateAsync(user, "P@ssw0rd").GetAwaiter().GetResult();
+                userManager.CreateAsync(user, "P@ssw0rd").GetAwaiter().GetResult();
+                userManager.AddClaimAsync(user, new Claim("Gallery.Claim", "Kunal.ClaimValue")).GetAwaiter().GetResult();
             }
             host.Run();
         }
